@@ -19,24 +19,38 @@ def compile_text_to_json():
                 tag = ""
                 innertitle = ""
                 description = ""
+                link = ""
                 
                 content = file.read()
                 # Split content
                 lines = content.split("|")
 
                 for line in lines:
-                    extract = line.split(":")
+                    #print(line)
+                    extract = line.split("::")
                     
-                    if (extract[0] == "date"):
+                    if ("date" in extract[0]):
+                        print("Date OK")
                         date = extract[1]
-                    elif (extract[0] == "\ntitle"):
+                    elif ("title" in extract[0]):
+                        print("Title OK")
                         title = extract[1]
-                    elif (extract[0] == "\ntag"):
+                    elif ("tag" in extract[0]):
+                        print("Tag OK")
                         tag = extract[1]
-                    elif (extract[0] == "\ninnertitle"):
+                    elif ("innertitle" in extract[0]):
+                        print("Innertitle OK")
                         innertitle = extract[1]
-                    elif (extract[0] == "\ndescription"):
+                    elif ("description" in extract[0]):
+                        print("Description OK")
                         description = extract[1]
+                    elif ("link" in extract[0]):
+                        print("Link OK")
+                        print("\n\n")
+                        try:
+                            link = extract[1]
+                        except:
+                            pass
                     else:
                         pass
 
@@ -47,6 +61,7 @@ def compile_text_to_json():
                     "tag": tag,
                     "innertitle": innertitle,
                     "description": description,
+                    "link": link,
                 }
 
             # Append the publication object to the list
