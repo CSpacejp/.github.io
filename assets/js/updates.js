@@ -23,7 +23,7 @@ const publicationsData = [];
 
 async function fetchPublicationData() {
     try {
-        const response = await fetch('https://github.com/CSpacejp/CSpacejp.github.io/blob/main/assets/js/updates.json');
+        const response = await fetch('https://raw.githubusercontent.com/CSpacejp/CSpacejp.github.io/main/assets/js/updates.json');
         const data = await response.json();
         publicationsData.push(...data);
         console.log(publicationsData); // Verify the extracted data
@@ -31,7 +31,7 @@ async function fetchPublicationData() {
         // Now you can use publicationsData to dynamically populate your webpage
         // For example, populate Swiper slides or other publication sections
     } catch (error) {
-        console.error('Error loading publications.json:', error);
+        console.error('Error loading updates.json:', error);
     }
 }
 
