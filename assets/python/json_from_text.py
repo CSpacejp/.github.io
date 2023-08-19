@@ -26,20 +26,20 @@ def compile_text_to_json():
                 lines = content.split("|")
 
                 for line in lines:
-                    #print(line)
+                
                     extract = line.split("::")
                     
                     if ("date" in extract[0]):
                         print("Date OK")
                         date = extract[1]
-                    elif ("title" in extract[0]):
-                        print("Title OK")
+                    elif ("main" in extract[0]):
+                        print("Maintitle OK")
                         title = extract[1]
                     elif ("tag" in extract[0]):
                         print("Tag OK")
                         tag = extract[1]
-                    elif ("innertitle" in extract[0]):
-                        print("Innertitle OK")
+                    elif ("sub" in extract[0]):
+                        print("Subtitle OK")
                         innertitle = extract[1]
                     elif ("description" in extract[0]):
                         print("Description OK")
