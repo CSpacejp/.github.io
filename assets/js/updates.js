@@ -21,11 +21,9 @@ const publicationsData = [
 
 
 
-
-
 async function fetchAndDisplayPublicationData() {
     try {
-        const response = await fetch('https://raw.githubusercontent.com/CSpacejp/CSpacejp.github.io/main/assets/js/updates.json');
+        const response = await fetch('https://raw.githubusercontent.com/CSpacejp/CSpacejp.github.io/main/assets/updates/updates.json');
         const data = await response.json();
         //console.log(data); // Verify the extracted data
 
