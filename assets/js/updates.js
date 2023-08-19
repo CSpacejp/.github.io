@@ -23,7 +23,7 @@ const publicationsData = [];
 
 async function fetchPublicationData() {
     try {
-        const response = await fetch('updates.json');
+        const response = await fetch('https://github.com/CSpacejp/CSpacejp.github.io/blob/main/assets/js/updates.json');
         const data = await response.json();
         publicationsData.push(...data);
         console.log(publicationsData); // Verify the extracted data
