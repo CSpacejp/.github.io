@@ -6,7 +6,7 @@ tag:: Recruitment |
 
 subtitle:: Recruiting new members for <font color=\"green\">CSpace</font> |
 
-description:: 🌟 Join Our Team: PR & Business Communications Specialist 🌟 <br>
+description:: 🌟 <b>Join Our Team: PR & Business Communications Specialist</b> 🌟 <br><br>
 Are you a dynamic communicator with a passion for sustainability and startups? Are you passionate about crafting compelling narratives and building meaningful relationships? If so, we have an exciting opportunity for you to play a pivotal role in our growing potential venture! 
 <br>
 <b>About Us:</b>
@@ -30,6 +30,7 @@ Joining our team means becoming a driving force in the sustainablity movement. Y
 <br>
 Ready to embark on a journey that combines your communication prowess with your passion for sustainability and startups? Contact us through the form below. Together, let's shape a more sustainable future!
 <br> 
+<br>
 📩 <b>Apply Now:</b><a href=\"https://forms.gle/9dM1Q8JgURywSRgA8\"><font color=\"green\">CSpace</font> contact form<\a>
 <br>
 #JoinTheCSpaceTeam #PRandCommunications #SustainabilityRevolution |
