@@ -1,6 +1,6 @@
 /*=============== CHANGE BACKGROUND HEADER ===============*/
 function scrollHeader(){
-  const header = document.getElementbyId('header')
+  const header = document.getElementById('header')
   //When scroll > 50 viewport height, add scroll-header class to the header tag
   if(this.scrollY >= 50) header.classList.add('scroll-header');
   else header.classList.remove('scroll-header')
