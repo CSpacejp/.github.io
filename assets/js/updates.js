@@ -1,6 +1,6 @@
 
-// Assuming publicationsData is an array containing publication data objects
-
+// The following is the general structure of the updates
+/*
 const publicationsData = [
     {
       date: "9 Jul 2023",
@@ -8,17 +8,10 @@ const publicationsData = [
       tag: "Recruitment",
       innertitle: "Recruiting new members for CSpace",
       description: "Are you interested to work in a motivated tech-environment?",
-    },
-    // Add more publication data objects as needed
-    {
-        date: "9 Jul 2023",
-        title: "Recruiting New Members",
-        tag: "Recruitment",
-        innertitle: "Recruiting new members for CSpace",
-        description: "Are you interested to work in a motivated tech-environment?",
+      link: "",
     },
 ];
-
+*/
 
 
 async function fetchAndDisplayPublicationData() {
@@ -79,7 +72,7 @@ return `
                     <p class="publications__model-description">
                         ${data.description}
                         </br>
-                        <a href=></a>
+                        ${data.link ? `<br><a href="${data.link}">${data.link}</a>` : ''}
                     </p>
                 </div>
             </div>
