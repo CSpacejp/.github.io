@@ -5,14 +5,16 @@ const publicationsData = [
     {
       date: "9 Jul 2023",
       title: "Recruiting New Members",
-      subtitle: "Recruitment",
+      tag: "Recruitment",
+      innertitle: "Recruiting new members for CSpace",
       description: "Are you interested to work in a motivated tech-environment?",
     },
     // Add more publication data objects as needed
     {
         date: "9 Jul 2023",
         title: "Recruiting New Members",
-        subtitle: "Recruitment",
+        tag: "Recruitment",
+        innertitle: "Recruiting new members for CSpace",
         description: "Are you interested to work in a motivated tech-environment?",
     },
 ];
@@ -25,7 +27,7 @@ async function fetchAndDisplayPublicationData() {
     try {
         const response = await fetch('https://raw.githubusercontent.com/CSpacejp/CSpacejp.github.io/main/assets/js/updates.json');
         const data = await response.json();
-        console.log(data); // Verify the extracted data
+        //console.log(data); // Verify the extracted data
 
         // Get the container element
         const swiperWrapper = document.querySelector(".swiper-slide");
@@ -64,7 +66,7 @@ function createNewPublication(data) {
 return `
     <div class="publications__content">
         <div>
-            <span class="publications__subtitle">${data.date} | ${data.subtitle}</span>
+            <span class="publications__subtitle">${data.date} | ${data.tag}</span>
             <h1 class="publications__title">${data.title}</h1></br>
 
             <span class="publications__button">
@@ -75,7 +77,7 @@ return `
                 <div class="publications__model-content">
                     <i class='bx bx-x publications__model-close'></i>
 
-                    <h3 class="publications__model-title">Recruiting new members for <font color="green">CSpace</font></h3>
+                    <h3 class="publications__model-title">${data.innertitle}</h3>
                     <p class="publications__model-description">
                         ${data.description}
                         </br>
