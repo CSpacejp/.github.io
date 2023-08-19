@@ -536,6 +536,11 @@ body.light-theme{
   z-index: var(--z-modal);
 }
 
+.publications__model.show {
+  opacity: 1;
+  visibility: visible;
+}
+
 .publications__content{
   margin-top: 2rem;
   margin-bottom: 2rem;

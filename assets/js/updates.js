@@ -1,6 +1,6 @@
 
 // Assuming publicationsData is an array containing publication data objects
-/*
+
 const publicationsData = [
     {
       date: "9 Jul 2023",
@@ -16,27 +16,48 @@ const publicationsData = [
         description: "Are you interested to work in a motivated tech-environment?",
     },
 ];
-*/
 
 
-const publicationsData = [];
 
-async function fetchPublicationData() {
+
+
+async function fetchAndDisplayPublicationData() {
     try {
         const response = await fetch('https://raw.githubusercontent.com/CSpacejp/CSpacejp.github.io/main/assets/js/updates.json');
         const data = await response.json();
-        publicationsData.push(...data);
-        console.log(publicationsData); // Verify the extracted data
+        console.log(data); // Verify the extracted data
 
-        // Now you can use publicationsData to dynamically populate your webpage
-        // For example, populate Swiper slides or other publication sections
+        // Get the container element
+        const swiperWrapper = document.querySelector(".swiper-slide");
+
+        // Loop through the data and insert publication sections
+        data.forEach(data => {
+            const section = document.createElement("div");
+            section.innerHTML = createNewPublication(data);
+            swiperWrapper.appendChild(section);
+
+            // Add click event listener to "Read more" button
+            const readMoreButton = section.querySelector(".publications__button");
+            const closeButton = section.querySelector(".publications__model-close");
+            const modelContent = section.querySelector(".publications__model");
+
+            readMoreButton.addEventListener("click", () => {
+                modelContent.classList.add("show");
+            });
+            
+            closeButton.addEventListener("click", () => {
+                modelContent.classList.remove("show");
+            });            
+        });
     } catch (error) {
         console.error('Error loading updates.json:', error);
     }
 }
 
-// Fetch and load publication data from JSON
-fetchPublicationData();
+// Call the function to fetch and display publication data
+fetchAndDisplayPublicationData();
+
+
   
 
 function createNewPublication(data) {
@@ -65,15 +86,4 @@ return `
         </div>
     </div>
     `;
-}
-  
-// Get the container element
-const swiperWrapper = document.querySelector(".swiper-slide");
-
-// Loop through the data and insert publication sections
-publicationsData.forEach(data => {
-  const section = document.createElement("div");
-  section.innerHTML = createNewPublication(data);
-  swiperWrapper.appendChild(section);
-});
-  
+} 
