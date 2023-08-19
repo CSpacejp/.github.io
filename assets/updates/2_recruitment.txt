@@ -11,7 +11,7 @@ description:: 🌟 <b>Join Our Team: PR & Business Communications Specialist</b>
 Are you a dynamic communicator with a passion for sustainability and startups? Are you passionate about crafting compelling narratives and building meaningful relationships? If so, we have an exciting opportunity for you to play a pivotal role in our growing potential venture! 
 <br><br>
 
-<b>About Us:</b>
+<b>About Us:</b><br>
 At CSpace, we are dedicated to revolutionizing the way industries approach sustainability. Our cutting-edge cloud-based platform, CSpace, will be making waves by automating Task Force on Climate-related Financial Disclosures (TCFD) and Task Force on Nature-related Financial Disclosures (TNFD) calculations, all while providing real-time insights through AI tools. As we continue to shape the future of sustainablity calculations, we are seeking a passionate PR & Business Communications Specialist to join our team.
 <br><br>
 
@@ -37,7 +37,7 @@ Ready to embark on a journey that combines your communication prowess with your 
 <br> 
 <br>
 
-📩 <b>Apply Now:</b> <a href=\"https://forms.gle/9dM1Q8JgURywSRgA8\"> CSpace application form <\a>
+📩 <b>Apply Now:</b> <a href=\"https://forms.gle/9dM1Q8JgURywSRgA8\"> CSpace application form </a>
 <br>
 
 <font color="blue">#JoinTheCSpaceTeam #PRandCommunications #SustainabilityRevolution</font>|
