@@ -1,0 +1,21 @@
+date:: Date here |
+
+maintitle:: Your title here |
+
+tag:: choose a tag |
+
+subtitle:: Enter the subtitle |
+
+description:: The following are some basic ideas on how to write an update post. <br>
+<br>
+1. You can follow the rules of HTML. Use <br> to introduce a line break. <br>
+2. Use <b> for <b>bold</b> and so on. <br>
+3. You can use emoji ✅ <br>
+4. Using this <a href=https://www.google.com target=_blank>Google</a>, you can insert a link. <br>
+5. All of these keywords (date, maintitle, tag, subtitle, description, link) are optional. You dont
+have to fill them all (although its better to). <br>
+6. Refer to example_image.png to understand what each of the keywords mean.
+7. I haven't tested all the HTML commands. Some commands might need some hack from your side. <br>
+8. Let me know if you need some help with anything regarding this process. <br>
+
+link:: www.google.com|

@@ -6,7 +6,7 @@ How to post an update in the Updates section of the website?
 a) Do NOT remove the key symbols (:: and |) and keywords (date, maintitle, tag, subtitle, description, link)  
 b) Make sure the text entered is enclosed between :: and |  
 c) It is not necessary to fill everything. For eg: link::| is a valid response  
-d) Refer to the reference image to understand what each keyword represents  
+d) Refer to the axample_image.png to understand what each keyword represents  
 
 3) Rename example_template.txt to X_(your custom name).txt (eg: 2_recruitment.txt), where X is the number of the update.
 The number can be found by looking at the assets/updates/ folder.
