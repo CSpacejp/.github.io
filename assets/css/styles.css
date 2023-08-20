@@ -495,6 +495,84 @@ body.light-theme{
   }
 }
 
+/*=============== ABOUT US ===============*/
+.aboutus__container{
+  width: 968;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  justify-items: center;
+}
+
+.aboutus__img__grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 2rem;
+}
+
+.aboutus__img__grid1{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 2rem;
+  padding-top: 5rem;
+}
+
+.aboutus__info,
+.aboutus__data,
+.aboutus__blob{
+  display: grid;
+}
+
+.aboutus__info{
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem 2rem;
+}
+
+.aboutus__data{
+  justify-content: center;
+  text-align: center;
+}
+
+.aboutus__blob{
+  background-color: var(--background-color);
+  border-radius: 3rem;
+  place-items: center;
+  margin-bottom: 1rem;
+}
+
+.aboutus__name{
+  font-size: var(--normal-font-size);
+  margin-bottom: .25rem;
+  color: black;
+}
+
+.aboutus__subtitle{
+  font-size: var(--smaller-font-size);
+  color: var(--text-color-light);
+}
+
+/* Animate icons */
+.aboutus__blob:hover img{
+  animation: bounce .6s;
+}
+
+@keyframes bounce{
+  0%{
+    transform: translateY(0);
+  }
+  20%{
+    transform: translateY(-6px);
+  }
+  40%{
+    transform: translateY(0px);
+  }
+  60%{
+    transform: translateY(-3px);
+  }
+  80%{
+    transform: translateY(0px);
+  }
+}
+
 /*=============== PUBLICATIONS ===============*/
 .publications__container{
   overflow: scroll;
