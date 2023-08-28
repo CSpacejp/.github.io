@@ -294,7 +294,6 @@ body.light-theme{
 /* The slider */
 .slider {
   position: absolute;
-  cursor:-webkit-grab;
   top: 0;
   left: 0;
   right: 0;
@@ -303,6 +302,11 @@ body.light-theme{
   -webkit-transition: .4s;
   transition: .4s;
 }
+
+.slider:hover {
+  cursor: grab;
+}
+
 .slider__labels {
   position: absolute;
   top: 4px;
