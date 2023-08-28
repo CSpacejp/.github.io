@@ -5,10 +5,10 @@
       "about__section__title": "Some of the best features of <font color=\"green\">CSpace</font>!",
 
       "about__title__1": "Biodiversity Impact",
-      "about__title__2": "A.I. Emissions Forecasting",
+      "about__title__2": "AI Emissions Forecasting",
       "about__title__3": "Automated Emissions Calculations",
       "about__description__1": "Evaluate the impact of your business on biodiversity based on the TNFD framework.",
-      "about__description__2": "Forecast your emissions and resource consumption for the upcoming week with A.I. powered forecasting.",
+      "about__description__2": "Forecast your emissions and resource consumption for the upcoming week with AI powered forecasting.",
       "about__description__3": "Completely automate your emissions data collection and calculations for a hassle-free emissions report generation.",
 
       "aboutus__title": "About Us",
@@ -19,22 +19,22 @@
       "mailtous": "Got a question? Write to us!"
     },
     "ja": {
-      "home__edu__description": "自動化された環境コンプライアンス ビジネス サポートの未来がここにあります。",
+      "home__edu__description": "自動化された環境コンプライアンスの未来がここに！",
       "learn__more__button": "もっと見る",
-      "about__section__title": "<font color=\"green\">CSpace</font>の優れた機能のいくつか",
+      "about__section__title": "<font color=\"green\">CSpace</font>の優れた機能",
 
       "about__title__1": "生物多様性への影響",
-      "about__title__2": "A.I.排出量予測",
-      "about__title__3": "自動排出量計算",
-      "about__description__1": "TNFD フレームワークに基づいて、生物多様性に対するビジネスの影響を評価します。",
-      "about__description__2": "AI を活用した予測により、来週の排出量とリソース消費を予測します。",
-      "about__description__3": "排出量データの収集と計算を完全に自動化し、手間のかからない排出量レポートを作成します。",
+      "about__title__2": "AIによる二酸化炭素排出量予測",
+      "about__title__3": "排出量自動計算",
+      "about__description__1": "TNFDのフレームワークに基づき、ビジネスが生物多様性へともたらす影響を評価します。",
+      "about__description__2": "AIを活用した予測メソッドにより、将来の二酸化炭素排出量・エネルギー消費量を予測します。",
+      "about__description__3": "排出量データの収集・計算を完全に自動化し、煩わしい手間をかけずに排出量レポートを作成します。",
 
       "aboutus__title": "私たちについて",
 
-      "updates__title": "アップデート",
+      "updates__title": "ニュース",
       
-      "contact__title": "連絡情報",
-      "mailtous": "質問がありますか?私たちに書いてください！"
+      "contact__title": "お問い合わせ",
+      "mailtous": "上記メールまでお気軽にお問い合わせください"
     }
   }
