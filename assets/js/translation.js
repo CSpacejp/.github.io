@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     const home_edu_description = document.getElementById("home__edu__description");
     
 
-    const translations = await fetch("https://raw.githubusercontent.com/CSpacejp/CSpacejp.github.io/main/translations.json").then(response => response.json());
+    const translations = await fetch("https://raw.githubusercontent.com/CSpacejp/CSpacejp.github.io/main/assets/translation.json").then(response => response.json());
   
     let currentLanguage = "en"; // Default language
   
