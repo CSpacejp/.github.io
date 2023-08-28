@@ -4,7 +4,7 @@ import json
 #from watchdog.events import FileSystemEventHandler
 
 # Choose the language
-language = "jp"
+language = "en"
 
 # Path to the directory containing text files
 text_files_directory = "../updates/{}/".format(language)
