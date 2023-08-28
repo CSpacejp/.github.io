@@ -294,6 +294,7 @@ body.light-theme{
 /* The slider */
 .slider {
   position: absolute;
+  cursor: pointer;
   top: 0;
   left: 0;
   right: 0;
@@ -304,11 +305,12 @@ body.light-theme{
 }
 
 .slider:hover {
-  cursor: grab;
+  cursor: pointer;
 }
 
 .slider__labels {
   position: absolute;
+  cursor: pointer;
   top: 4px;
   left: 0;
   width: 100%;

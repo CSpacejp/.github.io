@@ -16,7 +16,20 @@ const publicationsData = [
 
 async function fetchAndDisplayPublicationData() {
     try {
-        const response = await fetch('https://raw.githubusercontent.com/CSpacejp/CSpacejp.github.io/main/assets/updates/updates.json');
+
+        const translateButton = document.getElementById("translateButton");
+        translateButton.addEventListener("click", function () {
+            currentLanguage = currentLanguage === "en" ? "ja" : "en";
+            updateContent(currentLanguage);
+        });
+
+        var response = "";
+        if (currentLanguage === "en") {
+            response = await fetch('https://raw.githubusercontent.com/CSpacejp/CSpacejp.github.io/main/assets/updates/updates.json');
+        }
+        else {
+            response = await fetch('https://raw.githubusercontent.com/CSpacejp/CSpacejp.github.io/main/assets/updates/updates.json');
+        }
         const data = await response.json();
         //console.log(data); // Verify the extracted data
 

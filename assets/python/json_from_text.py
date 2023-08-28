@@ -3,8 +3,11 @@ import json
 #from watchdog.observers import Observer
 #from watchdog.events import FileSystemEventHandler
 
+# Choose the language
+language = "jp"
+
 # Path to the directory containing text files
-text_files_directory = "../updates/"
+text_files_directory = "../updates/{}/".format(language)
 
 # Function to compile text files into JSON
 def compile_text_to_json():
@@ -68,7 +71,7 @@ def compile_text_to_json():
             publications.append(publication)
 
     # Write the publications list to a JSON file
-    with open(text_files_directory+"updates.json", "w") as json_file:
+    with open("../updates/updates_{}.json".format(language), "w") as json_file:
         json.dump(publications, json_file, indent=4)
 
 ### Watchdog event handler
