@@ -12,19 +12,12 @@ const publicationsData = [
     },
 ];
 */
+document.addEventListener("DOMContentLoaded", async function () {
 
-
-async function fetchAndDisplayPublicationData() {
+async function fetchAndDisplayPublicationData(language) {
     try {
-
-        const translateButton = document.getElementById("translateButton");
-        translateButton.addEventListener("click", function () {
-            currentLanguage = currentLanguage === "en" ? "ja" : "en";
-            updateContent(currentLanguage);
-        });
-
-        var response = "";
-        if (currentLanguage === "en") {
+        let response = "";
+        if (language === "en") {
             response = await fetch('https://raw.githubusercontent.com/CSpacejp/CSpacejp.github.io/main/assets/updates/updates_en.json');
         }
         else {
@@ -35,6 +28,8 @@ async function fetchAndDisplayPublicationData() {
 
         // Get the container element
         const swiperWrapper = document.querySelector(".swiper-slide");
+        // Clear the swiperWrapper before adding new sections
+        swiperWrapper.innerHTML = '';
 
         // Loop through the data and insert publication sections
         data.forEach(data => {
@@ -60,11 +55,18 @@ async function fetchAndDisplayPublicationData() {
     }
 }
 
+
 // Call the function to fetch and display publication data
-fetchAndDisplayPublicationData();
+const translateButton = document.getElementById("translateButton");
+let currentLanguage = "en"
 
+translateButton.addEventListener("click", function () {
+    currentLanguage = currentLanguage === "en" ? "ja" : "en";
+    fetchAndDisplayPublicationData(currentLanguage);
+});
 
-  
+fetchAndDisplayPublicationData(currentLanguage);
+
 
 function createNewPublication(data) {
 return `
@@ -92,4 +94,5 @@ return `
         </div>
     </div>
     `;
-} 
+}
+});
