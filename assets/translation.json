@@ -2,11 +2,11 @@
     "en": {
       "home__edu__description": "The future of automated environmental compliance business support is here!",
       "learn__more__button": "Learn More",
-      "about__section__title": "Some of the best features of <font color=\"green\">CSpace</font>!"
+      "about__section__title": "Some of the best features of <font style=\"color:MediumSeaGreen;\">CSpace</font>!"
     },
     "ja": {
       "home__edu__description": "自動化された環境コンプライアンス ビジネス サポートの未来がここにあります。",
       "learn__more__button": "もっと見る",
-      "about__section__title": "<font color=\"green\">CSpace</font>の優れた機能のいくつか"
+      "about__section__title": "<font style=\"color:MediumSeaGreen;\">CSpace</font>の優れた機能のいくつか"
     }
   }
