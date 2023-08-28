@@ -2,11 +2,25 @@
     "en": {
       "home__edu__description": "The future of automated environmental compliance business support is here!",
       "learn__more__button": "Learn More",
-      "about__section__title": "Some of the best features of <font color=\"green\">CSpace</font>CSpace</font>!"
+      "about__section__title": "Some of the best features of <font color=\"green\">CSpace</font>!",
+
+      "about__title__1": "Biodiversity Impact",
+      "about__title__2": "A.I. Emissions Forecasting",
+      "about__title__3": "Automated Emissions Calculations",
+      "about__description__1": "Evaluate the impact of your business on biodiversity based on the TNFD framework.",
+      "about__description__2": "Forecast your emissions and resource consumption for the upcoming week with A.I. powered forecasting.",
+      "about__description__3": "Completely automate your emissions data collection and calculations for a hassle-free emissions report generation."
     },
     "ja": {
       "home__edu__description": "自動化された環境コンプライアンス ビジネス サポートの未来がここにあります。",
       "learn__more__button": "もっと見る",
-      "about__section__title": "<font color=\"green\">CSpace</font>CSpace</font>の優れた機能のいくつか"
+      "about__section__title": "<font color=\"green\">CSpace</font>の優れた機能のいくつか",
+
+      "about__title__1": "生物多様性への影響",
+      "about__title__2": "A.I.排出量予測",
+      "about__title__3": "自動排出量計算",
+      "about__description__1": "TNFD フレームワークに基づいて、生物多様性に対するビジネスの影響を評価します。",
+      "about__description__2": "AI を活用した予測により、来週の排出量とリソース消費を予測します。",
+      "about__description__3": "排出量データの収集と計算を完全に自動化し、手間のかからない排出量レポートを作成します。"
     }
   }
