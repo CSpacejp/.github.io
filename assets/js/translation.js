@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     function updateContent(language) {
       home_edu_description.textContent = translations[language].home__edu__description;
       learn_more_button.textContent = translations[language].learn__more__button;
-      about_section_title.textContent = translations[language].about__section__title;
+      about_section_title.innerHTML = translations[language].about__section__title;
     }
   
     translateButton.addEventListener("click", function () {
