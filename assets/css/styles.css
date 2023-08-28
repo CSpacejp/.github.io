@@ -20,11 +20,17 @@
 
   --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
   --first-color-alt: hsl(var(--first-hue), var(--sat), 71%); /* lig-4% */
+
   --title-color: hsl(var(--second-hue), 15%, 95%);
   --text-color: hsl(var(--second-hue), 8%, 75%);
-  --text-color-light: hsl(var(--second-hue), 4%, 55%);
+  /*--text-color-light: hsl(var(--second-hue), 4%, 55%);*/
   --body-color: hsl(var(--second-hue), 48%, 8%);
   --container-color: hsl(var(--second-hue), 32%, 12%);
+
+  --title-color: hsl(var(--second-hue), 15%, 15%);
+  --text-color: hsl(var(--second-hue), 8%, 35%);
+  --body-color: hsl(var(--second-hue), 100%, 99%);
+  --container-color: #FFFFFF;
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -134,34 +140,34 @@ body.light-theme{
     Color changes in some parts of
     the website, in light theme
 ==========*/
-.light-theme .scroll-header{
+.light-theme .dark_theme .scroll-header{
   box-shadow: 0 2px 4px hsla(0, 0%, 1%, .1);
 }
 
-.light-theme .nav__menu{
+.light-theme .dark_theme .nav__menu{
   background-color: hsla(var(--second-hue), 32%, 90%, .8);
 }
 
-.light-theme .section__subtitle{
+.light-theme .dark_theme .section__subtitle{
   color: var(--text-color);
 }
 
-.light-theme .home__social-link{
+.home__social-link{
   box-shadow: 0 2px 8px hsla(var(--second-hue), 48%, 8%, .1%);
 }
 
-.light-theme .home__social::after{
+.home__social::after{
   background-color: var(--title-color);
 }
 
-.light-theme .home__social-link,
-.light-theme .home__scroll
-.light-theme .button,
-.light-theme .button:hover{
+.home__social-link,
+.home__scroll
+.button,
+.button:hover{
   color: var(--title-color);
 }
 
-.light-theme .about__box{
+.about__box{
   box-shadow: 0 2px 8px hsla(var(--second-hue), 48%, 8%, .1);
 }
 
@@ -249,23 +255,21 @@ body.light-theme{
 
 .nav__menu{
   position: fixed;
-  bottom: 1rem;
-  background-color: hsla(var(--second-hue), 32%, 16%, .8);
-  width: 90%;
+  top: 0.25rem;
+  background-color: hsla(var(--body-color), 32%, 16%, .8);
   border-radius: 4rem;
   padding: 1rem 2.25rem;
-  backdrop-filter: blur(10px);
+  /*backdrop-filter: blur(10px);*/
   transition: .4s; /* for light mode animation */
 }
 
 .nav__list{
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .nav__link{
-  color: var(--text-color);
+  color: var(--first-hue);
   font-size: 1.25rem;
   padding: .4rem;
   display: flex;
@@ -299,7 +303,7 @@ body.light-theme{
 .home__social-link{
   width: max-content;
   background-color: var(--container-color);
-  color: var(--first-color);
+  color: var(--text-color);
   padding: .25rem;
   border-radius: .25rem;
   display: flex;
@@ -649,6 +653,7 @@ body.light-theme{
   place-items: center;
   transition: .4s;
   z-index: var(--z-modal);
+  box-shadow: 0 2px 8px hsla(var(--second-hue), 48%, 8%, .1);
 }
 
 .publications__model.show {
@@ -747,6 +752,7 @@ body.light-theme{
   padding: 1rem;
   border-radius: .75rem;
   text-align: center;
+  box-shadow: 0 2px 8px hsla(var(--second-hue), 48%, 8%, .1);
 }
 
 .contact__card-icon{
@@ -868,7 +874,6 @@ body.light-theme{
 @media screen and (min-width: 576px){
   .nav__menu{
     width: 328px;
-    left: 0;
     right: 0;
     margin: 0 auto;
   }
