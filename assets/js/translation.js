@@ -11,6 +11,13 @@ document.addEventListener("DOMContentLoaded", async function () {
     const about_description_2 = document.getElementById("about__description__2");
     const about_description_3 = document.getElementById("about__description__3");
 
+    const aboutus_title = document.getElementById("aboutus__title");
+
+    const updates_title = document.getElementById("updates__title");
+
+    const contact_title = document.getElementById("contact__title");
+    const mailtous = document.getElementById("mailtous");
+
     const translations = await fetch("https://raw.githubusercontent.com/CSpacejp/CSpacejp.github.io/main/assets/translation.json").then(response => response.json());
   
     let currentLanguage = "en"; // Default language
@@ -26,6 +33,12 @@ document.addEventListener("DOMContentLoaded", async function () {
       about_description_1.textContent = translations[language].about__description__1;
       about_description_2.textContent = translations[language].about__description__2;
       about_description_3.textContent = translations[language].about__description__3;
+
+      aboutus_title.textContent = translations[language].aboutus__title;
+
+      updates_title.textContent = translations[language].updates__title;
+      contact_title.textContent = translations[language].contact__title;
+      mailtous.textContent = translations[language].mailtous;
     }
   
     translateButton.addEventListener("click", function () {
