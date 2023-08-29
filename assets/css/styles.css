@@ -190,7 +190,7 @@ body.light-theme{
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
-  max-width: 968px;
+  max-width: 80%;/*968px;*/
   margin-left: 1rem;
   margin-right: 1rem;
 }
@@ -398,7 +398,7 @@ input:checked + .slider:before {
 }
 
 .home__social{
-  margin-left: 8rem;
+  margin-left: 5%;
   margin-bottom: 10rem;
   bottom: 5rem;
   left: 0;
@@ -424,8 +424,8 @@ input:checked + .slider:before {
 
 .home__social::after{
   content: '';
-  width: 32px;
-  height: 2px;
+  width: 2%;
+  height: auto;
   background-color: var(--firs-color);
   transform: rotate(90deg) translate(16px, 3px);
 }
@@ -442,6 +442,7 @@ input:checked + .slider:before {
   row-gap: 2rem; /* Gap for the profile image from text*/
   padding-top: 1rem;
   grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
 }
 
 .home__data{
@@ -472,8 +473,8 @@ input:checked + .slider:before {
 }
 
 .home__img{
-  width: 450px;
-  height: 400px;
+  max-width: 80%;
+  max-height: auto;
   border-radius: 1.5rem;
   justify-self: right;
 }
@@ -530,19 +531,21 @@ input:checked + .slider:before {
 }
 
 /*=============== ABOUT ===============*/
-.about_container{
+.about__container{
   row-gap: 2.5rem;
+  width: 80%;
+  height: auto;
 }
 
 .about-monitors__img{
-  width: 800px;
+  width: 75%;
   height: auto;
   justify-self: center;
 }
 
 .about-iot__img, .about-ai__img,
 .about-audit__img{
-  width: 225px;
+  width: 100%;
   height: auto;
   justify-self: center;
   margin-bottom: .5rem;
@@ -554,15 +557,18 @@ input:checked + .slider:before {
 }
 
 .about__info{
+  width: 100%;
+  height: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: .5rem;
-  column-gap: 12rem;
+  column-gap: 20%;
   margin-bottom: 2rem;
 }
 
 .about__box{
-  width: 300px;
+  width: 225%;
+  height: auto;
   background-color: var(--container-color);
   border-radius: .75rem;
   padding: .75rem .5rem;
@@ -607,7 +613,8 @@ input:checked + .slider:before {
 
 /*=============== ABOUT US ===============*/
 .aboutus__container{
-  width: 968;
+  width: 80%;
+  height: auto;
   margin-left: 1rem;
   margin-right: 1rem;
   justify-items: center;
@@ -960,7 +967,8 @@ input:checked + .slider:before {
   }
 
   .about__info{
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 140px);
+    justify-content: center;
   }
 
   .skills__info{
