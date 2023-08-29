@@ -82,10 +82,11 @@ const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'bx bx-
 if (selectedTheme) {
   // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the light
   document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](lightTheme)
-  themeButton.classList[selectedIcon === 'bx bx-moon' ? 'add' : 'remove'](iconTheme)
+  //themeButton.classList[selectedIcon === 'bx bx-moon' ? 'add' : 'remove'](iconTheme)
 }
 
 // Activate / deactivate the theme manually with the button
+/*
 themeButton.addEventListener('click', () => {
     // Add or remove the light / icon theme
     document.body.classList.toggle(lightTheme)
@@ -94,9 +95,10 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+*/
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
-const sr= ScrollReveal({
+const sr = ScrollReveal({
   origin: "top",
   distance: "60px",
   duration: 2500,
