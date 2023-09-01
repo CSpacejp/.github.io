@@ -13,9 +13,9 @@
         Pink: hsl(356, 66%, 75%)
         Teal: hsl(174, 63%, 62%)
   */
-  --first-hue: 174;
-  --sat: 63%;
-  --lig: 62%;
+  --first-hue: 78;
+  --sat: 60%;
+  --lig: 63%;
   --second-hue: 219;
 
   --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
@@ -766,7 +766,6 @@ input:checked + .slider:before {
   place-items: center;
   transition: .4s;
   z-index: var(--z-modal);
-  touch-action: auto;
   box-shadow: 0 2px 8px hsla(var(--second-hue), 48%, 8%, .1);
 }
 
