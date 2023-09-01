@@ -398,9 +398,9 @@ input:checked + .slider:before {
 }
 
 .home__social{
-  margin-left: 5%;
+  margin-left: 0%;
   margin-bottom: 10%;
-  bottom: 5%; /*5rem;*/
+  bottom: auto; /*5rem;*/
   left: 0;
   display: grid;
   row-gap: .5rem;
@@ -975,11 +975,19 @@ input:checked + .slider:before {
     flex-direction: column;
   }
 
-  .home__social
   .home__social-link{
     font-size: 1.5rem;
-    left: 0%;
-    right: 5%;
+  }
+
+  .home__img{
+    max-width: 75%;
+    max-height: auto;
+    border-radius: 1.5rem;
+    justify-self: center;
+  }
+
+  .about-monitors__img{
+    width: 100%;
   }
 
   .about__info{
@@ -1030,6 +1038,24 @@ input:checked + .slider:before {
 
   .home__container{
     grid-template-columns: repeat(2, 40%);
+  }
+
+  .home__social
+  .home__social-link{
+    font-size: 2.5rem;
+    bottom: 60%;
+    margin-left: 5%;
+  }
+
+  .home__img{
+    max-width: 80%;
+    max-height: auto;
+    border-radius: 1.5rem;
+    justify-self: right;
+  }
+
+  .about-monitors__img{
+    width: 75%;
   }
 
   .aboutus__img__grid{
