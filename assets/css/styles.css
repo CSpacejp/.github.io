@@ -270,7 +270,7 @@ body.light-theme{
 
 .nav__link{
   color: var(--first-hue);
-  font-size: 1.25rem;
+  font-size: auto;
   padding: .4rem;
   display: flex;
   border-radius: 5rem;
@@ -766,6 +766,7 @@ input:checked + .slider:before {
   place-items: center;
   transition: .4s;
   z-index: var(--z-modal);
+  touch-action: auto;
   box-shadow: 0 2px 8px hsla(var(--second-hue), 48%, 8%, .1);
 }
 
