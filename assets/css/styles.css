@@ -400,7 +400,7 @@ input:checked + .slider:before {
 .home__social{
   margin-left: 5%;
   margin-bottom: 10%;
-  bottom: 5rem;
+  bottom: 5%; /*5rem;*/
   left: 0;
   display: grid;
   row-gap: .5rem;
@@ -957,18 +957,48 @@ input:checked + .slider:before {
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-@media screen and (min-width: 320px){
+@media screen and (min-width: 240px){
+  .container{
+    max-width: 100%;
+    align-items: center;
+  }
+
   .nav__menu{
-    padding: 1rem 1.5rem;
+    position: relative;
+  }
+
+  .home__container{
+    grid-template-columns: repeat(1, 80%);
   }
 
   .home__buttons{
     flex-direction: column;
   }
 
+  .home__social
+  .home__social-link{
+    font-size: 1.5rem;
+    left: 0%;
+    right: 5%;
+  }
+
   .about__info{
-    grid-template-columns: repeat(1, 140px);
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .about__box{
+    width: 90%;
+  }
+
+  .aboutus__img__grid{
+    grid-template-columns: repeat(1, 1fr);
     justify-content: center;
+  }
+
+  .aboutus__img__grid1{
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    padding-top: 0rem;
   }
 
   .skills__info{
@@ -986,10 +1016,37 @@ input:checked + .slider:before {
 
 /* For medium devices */
 @media screen and (min-width: 576px){
+
+  .container{
+    max-width: 80%;
+    align-items: center;
+  }
+
   .nav__menu{
-    width: 328px;
+    width: 30%;
     right: 0;
-    margin: 0 auto;
+    position: relative;
+  }
+
+  .home__container{
+    grid-template-columns: repeat(2, 40%);
+  }
+
+  .aboutus__img__grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 2rem;
+  }
+
+  .aboutus__img__grid1{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 2rem;
+  padding-top: 5rem;
+  }
+
+  .about__box{
+    width: 225%;
   }
 
   .about__info{
@@ -1023,6 +1080,7 @@ input:checked + .slider:before {
   .container{
     margin-left: auto;
     margin-right: auto;
+    align-items: center;
   }
 
   .section{
@@ -1035,6 +1093,12 @@ input:checked + .slider:before {
 
   .nav{
     height: calc(var(--header-height) + 1rem);
+  }
+
+  .nav__menu{
+    width: 30%;
+    right: 0;
+    position: relative;
   }
 
   .home__social-link{
