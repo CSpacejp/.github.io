@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>general &#8211; CSpace-Blog</title>
+	<atom:link href="http://localhost/category/general/feed/?simply_static_page=137" rel="self" type="application/rss+xml" />
+	<link>/assets/blog//</link>
+	<description></description>
+	<lastBuildDate>Fri, 08 Sep 2023 20:36:39 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.3.1</generator>
+	<item>
+		<title>CSpace blog</title>
+		<link>/assets/blog//2023/09/08/cspace-blog/</link>
+		
+		<dc:creator><![CDATA[CSpace]]></dc:creator>
+		<pubDate>Fri, 08 Sep 2023 19:46:01 +0000</pubDate>
+				<category><![CDATA[general]]></category>
+		<guid isPermaLink="false">/assets/blog//?p=13</guid>
+
+					<description><![CDATA[This is a test blog with an image]]></description>
+										<content:encoded><![CDATA[
+<p class="has-black-color has-text-color">This is a test blog with an image</p>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" fetchpriority="high" width="1024" height="640" src="/assets/blog//wp-content/uploads/2023/09/i7xdsmqz6me51-1024x640.jpg" alt="" class="wp-image-14" srcset="/assets/blog//wp-content/uploads/2023/09/i7xdsmqz6me51-1024x640.jpg 1024w, /assets/blog//wp-content/uploads/2023/09/i7xdsmqz6me51-300x188.jpg 300w, /assets/blog//wp-content/uploads/2023/09/i7xdsmqz6me51-768x480.jpg 768w, /assets/blog//wp-content/uploads/2023/09/i7xdsmqz6me51-1536x960.jpg 1536w, /assets/blog//wp-content/uploads/2023/09/i7xdsmqz6me51.jpg 1920w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>
