@@ -392,6 +392,40 @@ input:checked + .slider:before {
   color: var(--title-color);
 }
 
+.notice {
+  background-color: red;
+  position: relative;
+  font-weight: var(--font-semibold);
+  justify-content: center;
+  align-items: center;
+  background-color: green;
+  color: white;
+  padding-top: 80px;
+  padding-bottom: 8px;
+}
+
+.notice a {
+  width: 150px;
+  background-color: white;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.notification {
+  color: white;
+  font-size: 25px;
+}
+
+.notice__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
 .home__social,
 .home__scroll{
   position: absolute;
