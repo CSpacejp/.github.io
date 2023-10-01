@@ -23,7 +23,7 @@ def compile_text_to_json():
     publications = []
 
     filenames = filter(lambda name: extract_id(name) != float('inf'), os.listdir(text_files_directory))
-    filenames = sorted(filenames, key=extract_id)
+    filenames = sorted(filenames, key=extract_id, reverse=True)
     print(filenames)
 
     for filename in filenames: #os.listdir(text_files_directory):
