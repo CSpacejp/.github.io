@@ -1,4 +1,5 @@
 import os
+import re
 import json
 #from watchdog.observers import Observer
 #from watchdog.events import FileSystemEventHandler
@@ -9,14 +10,26 @@ language = "en"
 # Path to the directory containing text files
 text_files_directory = "../updates/{}/".format(language)
 
+# Function to extract the ID from the filename
+def extract_id(filename):
+    try:
+        # Splitting the filename by underscore and converting the ID part to an integer
+        return int(filename.split('_')[0])
+    except ValueError:
+        return float('inf')  # Return infinity if the conversion fails
+
 # Function to compile text files into JSON
 def compile_text_to_json():
     publications = []
 
-    for filename in os.listdir(text_files_directory):
+    filenames = filter(lambda name: extract_id(name) != float('inf'), os.listdir(text_files_directory))
+    filenames = sorted(filenames, key=extract_id)
+    print(filenames)
+
+    for filename in filenames: #os.listdir(text_files_directory):
         if filename.endswith(".txt"):
             with open(os.path.join(text_files_directory, filename), "r") as file:
-                
+                print(filename)
                 date = ""
                 title = ""
                 tag = ""
