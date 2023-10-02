@@ -645,6 +645,30 @@ input:checked + .slider:before {
   }
 }
 
+.blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100vh; /* or adjust as needed */
+}
+
+.promotion__video iframe {
+  max-width: 100%; /* Ensure the iframe is responsive */
+  border-width: 2px;
+  border-radius: 2rem;
+  border: .1rem solid black;
+}
+
+.blog button {
+  margin-top: 20px; /* Optional: Add some spacing between the video and the button */
+  padding: 10px 20px;
+  background-color: blue;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
 /*=============== ABOUT US ===============*/
 .aboutus__container{
   width: 80%;
