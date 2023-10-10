@@ -686,7 +686,7 @@ input:checked + .slider:before {
 
 .aboutus__img__grid1{
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   margin-bottom: 2rem;
   padding-top: 5rem;
 }
