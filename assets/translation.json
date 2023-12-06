@@ -1,7 +1,7 @@
 {
     "en": {
       "notification__id": "🎉 Thank you for donating a total of 668,000 yen at TomoPro × CSpace! 🎉",
-      "donateButton": "Donate",
+      "donateButton": "view",
       "home__edu__description": "The future of automated environmental compliance business support is here!",
       "learn__more__button": "Learn More",
       "about__section__title": "Some of the best features of <font color=\"green\">CSpace</font>!",
@@ -22,7 +22,7 @@
     },
     "ja": {
       "notification__id": "🎉 ともプロ × CSpaceに「合計　668,000円」のご寄付ありがとうございました！ 🎉",
-      "donateButton": "寄附する",
+      "donateButton": "表示",
       "home__edu__description": "自動化された環境コンプライアンスの未来がここに！",
       "learn__more__button": "もっと見る",
       "about__section__title": "<font color=\"green\">CSpace</font>の優れた機能",
